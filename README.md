@@ -1,4 +1,4 @@
-# Flex & Bison - Unix Text processing Tools
+# Flex & Bison - *Unix Text Processing Tools*
 
 The book [Flex & Bison][1] (IBAN 978-0-596-15597-1) released on August 2009 by [O'Reilly][2] written by John Levine contains
 a lot of code examples. On the preface, page xv, the book prints the following URL
