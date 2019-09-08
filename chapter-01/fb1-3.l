@@ -17,7 +17,7 @@
 "|"     { printf("ABS\n"); }
 [0-9]+  { printf("NUMBER %s\n", yytext); }
 \n      { printf("NEWLINE\n"); }
-[ \t]   { }
+[ \t]   { /* ignore whitespaces */ }
 .       { printf("Mystery character %s\n", yytext); }
 
 %%
