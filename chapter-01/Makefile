@@ -16,4 +16,4 @@ fb1-2: fb1-2.c
 .PHONY: clean
 
 clean:
-	rm *.c $(BINS)
+	rm -rf *.c $(BINS)
