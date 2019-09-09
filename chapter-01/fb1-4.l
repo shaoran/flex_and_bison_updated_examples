@@ -52,7 +52,7 @@ int main(void)
 {
     int tok;
 
-    while(tok = yylex()) {
+    while((tok = yylex())) {
         printf("%d", tok);
         if(tok == NUMBER)
             printf(" = %d\n", yylval);
