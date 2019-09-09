@@ -1,4 +1,4 @@
-FLEX=flex
+LEX=flex
 CC=gcc
 BINS=fb1-1 fb1-2 fb1-3 fb1-4
 
@@ -13,7 +13,7 @@ $(BINS):
 	$(CC) -o $@ $< -lfl
 
 %.c: %.l
-	$(FLEX) -o $@ $<
+	$(LEX) -o $@ $<
 
 .PHONY: clean
 
