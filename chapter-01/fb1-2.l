@@ -8,6 +8,15 @@
 
 /* English -> American */
 
+/*
+   https://stackoverflow.com/q/39075510/1480131
+   suppresses the generation of the function
+   input & yyunput, otherwise gcc -Wall complains
+   about those functions being defined but not used.
+*/
+%option nounput
+%option noinput
+
 %%
 
 "colour"     { printf("color"); }
