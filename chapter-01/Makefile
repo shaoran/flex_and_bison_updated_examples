@@ -10,7 +10,7 @@ fb1-3: fb1-3.c
 fb1-4: fb1-4.c
 
 $(BINS):
-	$(CC) -o $@ $< -lfl
+	$(CC) -o $@ $^ -lfl
 
 %.c: %.l
 	$(LEX) -o $@ $<
