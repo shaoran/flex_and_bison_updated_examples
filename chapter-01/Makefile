@@ -1,4 +1,5 @@
 LEX=flex
+YACC=bison
 CC=gcc
 BINS=fb1-1 fb1-2 fb1-3 fb1-4
 
@@ -15,7 +16,10 @@ $(BINS):
 %.c: %.l
 	$(LEX) -o $@ $<
 
+%.tab.c: %.y
+	$(CC) -o $@ -d $<
+
 .PHONY: clean
 
 clean:
-	rm -rf *.c $(BINS)
+	rm -rf *.c *.h $(BINS)
