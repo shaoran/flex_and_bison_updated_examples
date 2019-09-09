@@ -14,7 +14,7 @@ $(BINS):
 	$(CC) -o $@ $^ -lfl
 
 %.c: %.l
-	$(LEX) -o $@ $<
+	$(LEX) -o $@ $($(<)_header_file) $<
 
 %.tab.c: %.y
 	$(CC) -o $@ -d $<
